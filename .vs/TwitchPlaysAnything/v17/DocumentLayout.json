@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\",
+  "WorkspaceRootPath": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5482A8E2-9BCA-48B7-AFF4-1C7D2EFB42B7}|TwitchPlaysAnything.csproj|x:\\programming\\projects\\0524\\twitchplaysanything\\code\\twitchplaysanything\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5482A8E2-9BCA-48B7-AFF4-1C7D2EFB42B7}|TwitchPlaysAnything.csproj|x:\\programming\\projects\\0524\\twitchplaysanything\\code\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5482A8E2-9BCA-48B7-AFF4-1C7D2EFB42B7}|TwitchPlaysAnything.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5482A8E2-9BCA-48B7-AFF4-1C7D2EFB42B7}|TwitchPlaysAnything.csproj|x:\\programming\\projects\\0524\\twitchplaysanything\\code\\twitchplaysanything\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5482A8E2-9BCA-48B7-AFF4-1C7D2EFB42B7}|TwitchPlaysAnything.csproj|x:\\programming\\projects\\0524\\twitchplaysanything\\code\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5482A8E2-9BCA-48B7-AFF4-1C7D2EFB42B7}|TwitchPlaysAnything.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\MainWindow.xaml",
+              "DocumentMoniker": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\MainWindow.xaml",
+              "ToolTip": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-01T23:54:29.22Z",
@@ -44,14 +44,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\MainWindow.xaml.cs",
+              "DocumentMoniker": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\MainWindow.xaml.cs",
+              "ToolTip": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T23:54:27.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T23:54:27.949Z"
             }
           ]
         }

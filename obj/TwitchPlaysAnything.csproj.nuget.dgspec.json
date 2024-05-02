@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\TwitchPlaysAnything.csproj": {}
+    "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything.csproj": {}
   },
   "projects": {
-    "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\TwitchPlaysAnything.csproj": {
+    "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\TwitchPlaysAnything.csproj",
+        "projectUniqueName": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything.csproj",
         "projectName": "TwitchPlaysAnything",
-        "projectPath": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\TwitchPlaysAnything.csproj",
+        "projectPath": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything.csproj",
         "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
-        "outputPath": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\TwitchPlaysAnything\\obj\\",
+        "outputPath": "X:\\Programming\\Projects\\0524\\TwitchPlaysAnything\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
