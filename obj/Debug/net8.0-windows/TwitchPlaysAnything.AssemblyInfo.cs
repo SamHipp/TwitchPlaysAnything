@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwitchPlaysAnything")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7db6581bd8bb0e3e6acd112d80f6e9133decfa45")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eff533cdef08a6a29f6856bd9470050a091ae2cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwitchPlaysAnything")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwitchPlaysAnything")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

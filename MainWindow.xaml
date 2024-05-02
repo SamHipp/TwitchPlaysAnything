@@ -5,8 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TwitchPlaysAnything"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="640"
+        Background="#1E1E1E">
+    <Window.Resources>
+        <Style x:Key="SmallButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="26" />
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="Padding" Value="8,0" />
+            <Setter Property="Margin" Value="8,0" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="Background" Value="#406269" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+        </Style>
+        <Style x:Key="StandardText" TargetType="Label">
+            <Setter Property="Margin" Value="8,0" />
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="Foreground" Value="#FFFFFF" />
+        </Style>
+    </Window.Resources>
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39" />
+            <RowDefinition Height="52" />
+            <RowDefinition Height="Auto" MaxHeight="500"/>
+            <RowDefinition Height="152"/>
+        </Grid.RowDefinitions>
+        <Button
+            Style="{StaticResource SmallButtonStyle}"
+            Grid.Column="0"
+            Grid.Row="0"
+            HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="Auto" Height="26">
+            Twitch Account Settings
+        </Button>
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1"
+                    HorizontalAlignment="Center"
+                    >
+            <Label
+                Style="{StaticResource StandardText}"
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+                Application:
+            </Label>
+        </StackPanel>
     </Grid>
 </Window>
