@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace TwitchPlaysAnything.Core
+namespace TwitchPlaysAnything.Commands
 {
     class RelayCommand : ICommand
     {
         private Action<object> execute;
         private Func<object, bool> canExecute;
+        private ICommand? startTwitchControl;
+        private object canStartTwitchControl;
 
         public event EventHandler? CanExecuteChanged
         {
@@ -24,17 +26,22 @@ namespace TwitchPlaysAnything.Core
             this.canExecute = canExecute;
         }
 
-        public bool CanExecute(object parameter)
+        public RelayCommand(ICommand? startTwitchControl, object canStartTwitchControl)
         {
-            return this.canExecute == null || canExecute(parameter);
+            this.startTwitchControl = startTwitchControl;
+            this.canStartTwitchControl = canStartTwitchControl;
+        }
+
+        public bool CanExecute(object? parameter)
+        {
+            return canExecute(parameter);
 
             throw new NotImplementedException();
         }
 
-        public void Execute(object parameter)
+        public void Execute(object? parameter)
         {
-            this.execute(parameter);
-            throw new NotImplementedException();
+            execute(parameter);
         }
     }
 }
