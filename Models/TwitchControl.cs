@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -13,7 +14,10 @@ namespace TwitchPlaysAnything.Models
 {
     public class TwitchControl
     {
+        [DllImport("user32.dll")]
+        public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, uint dwExtraInfo);
         public string Process_Name { get; set; } = "VisualBoyAdvance";
+        // public string Process_Name { get; set; } = "Notepad";
         public WindowsAPI WindowsAPI { get; set; } = new WindowsAPI();
         public static void FocusWindow(string processName)
         {
@@ -136,7 +140,7 @@ namespace TwitchPlaysAnything.Models
         }
         public static void Button(char btn, int sleep = 50)
         {
-            FocusWindow("VisualBoyAdvance");
+            FocusWindow("Notepad");
             SimulateKeyPress(btn);
             //PressKey(btn, true);
             //Sleep(sleep);
@@ -146,7 +150,7 @@ namespace TwitchPlaysAnything.Models
         private static bool MapKeys(string command)
         {
             bool result = true;
-            Button('1');
+            Button('A');
             return result;
         }
         private static void checkCommands(string input, int Player = 0)
@@ -185,14 +189,38 @@ namespace TwitchPlaysAnything.Models
             if (char.IsLetterOrDigit(ch) || char.IsPunctuation(ch))
             {
                 // Simulate key press
-                Key ke = Key.A;
-                if (Keyboard.PrimaryDevice != null)
+                Key ke = Key.G;
+                if (Keyboard.PrimaryDevice != null && Application.Current?.MainWindow != null)
                 {
-                    KeyboardEventArgs args = new KeyEventArgs(Keyboard.PrimaryDevice, PresentationSource.FromVisual(Application.Current.MainWindow), 0, ke)
+                    //KeyboardEventArgs args = new KeyEventArgs(Keyboard.PrimaryDevice, PresentationSource.FromVisual(Application.Current.MainWindow), 0, ke)
+                    //{
+                    //    RoutedEvent = Keyboard.KeyDownEvent
+                    //};
+                    //InputManager.Current.ProcessInput(args);
+
+                    //// Introduce a delay using a different method
+                    //Task.Delay(25).Wait(); // Note: Using Wait() is not recommended in production code.
+
+                    //// Simulate key up event
+                    //KeyboardEventArgs argsUp = new KeyEventArgs(Keyboard.PrimaryDevice, PresentationSource.FromVisual(Application.Current.MainWindow), 0, ke)
+                    //{
+                    //    RoutedEvent = Keyboard.KeyUpEvent
+                    //};
+                    //InputManager.Current.ProcessInput(argsUp);
+
+                    const int VK_UP = 0x31; //a key
+                    const int VK_DOWN = 0x28;  //down key
+                    const int VK_LEFT = 0x25;
+                    const int VK_RIGHT = 0x27;
+                    const uint KEYEVENTF_KEYUP = 0x0002;
+                    const uint KEYEVENTF_EXTENDEDKEY = 0x0001;
+                    int press()
                     {
-                        RoutedEvent = Keyboard.KeyDownEvent
-                    };
-                    InputManager.Current.ProcessInput(args);
+                        //Press the key
+                        keybd_event((byte)VK_UP, 0, KEYEVENTF_EXTENDEDKEY | 0, 0);
+                        return 0;
+                    }
+                    press();
                 }
             }
             //else
